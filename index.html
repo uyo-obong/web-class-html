@@ -2,91 +2,67 @@
 
 <head>
     <title> This is my first HTML Class</title>
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         body {
-            background-color: gray;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         a {
             text-decoration: none;
+            color: rgb(66, 202, 255);
+
         }
 
         a:hover {
-            color: red;
+            color: #30a9fa;
         }
 
-        h1,
-        h2,
-        h3 {
-            color: red;
-            text-transform: lowercase;
+        .header {
+            background: rgb(66, 202, 255);
+            padding: 0px 0px 250px;
         }
 
-        .change-color {
-            color: royalblue;
+        .image-control {
+            position: absolute;
+            top: 150;
+            padding: 1%;
+            z-index: 1;
         }
 
-        #get-id {
-            color: sandybrown;
-            border: 2px solid blue;
-            margin: 80px 80px 0px 0px;
-            padding: 30px;
-
+        .image {
+            width: 180;
+            height: 180;
+            border-radius: 50%;
+            border: 2px solid white;
         }
 
-        .required:after {
-            color: red;
-            content: '*';
-        }
-        .table {
-            border: 1px solid black;
+        .content {
+            text-align: justify;
+            padding-left: 30px;
         }
     </style>
 
 </head>
 
 <body>
+    <div class="control">
+        <div class="header"></div>
+        <div class="image-control">
+            <img class="image" src="profile.jpg" />
 
-    <a href="">Link to profile</a>
+            <div class="content">
+                <p>Legendary Tony</p>
+                <p>Software Developer</p>
+                <p>Atani Anambra State <span>&#8226;</span> <a href="">My github link</a> <span>&#8226;</span> 
+                    <a href="">My profile</a></p>
+            </div>
 
-    <h1>This h1 tag</h1>
-    <h2>This h1 tag</h2>
-    <h2>This h1 tag</h2>
-
-
-    <p class="change-color">This paragraph tag</p>
-    <p class="change-color">This paragraph tag</p>
-    <p class="change-color">This paragraph tag</p>
-    <p class="change-color">This paragraph tag</p>
-
-
-    <div id="get-id">This is bold teg</div>
-
-    <form>
-        <label class="required">First Name </label>
-        <input type="text" name="name" placeholder="Enter Name" required>
-    </form>
-
-
-    <table>
-        <tr>
-            <th>S/N</th>
-            <th>Name</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <th>Petr</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <th>2</th>
-            <th>Name</th>
-            <th>Email</th>
-        </tr>
-    </table>
-
+        </div>
+    </div>
 
 </body>
 
